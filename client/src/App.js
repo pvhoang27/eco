@@ -93,7 +93,7 @@ function App() {
       <main
         style={{
           maxWidth: "900px",
-          margin: "2rem auto",sdfsfds
+          margin: "2rem auto",11
           background: "#fff",sdfds
           borderRadius: "8px",
           boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
