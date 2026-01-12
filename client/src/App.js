@@ -1,3 +1,4 @@
+import ProductList from './components/ProductList';
 
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
@@ -38,6 +39,7 @@ function App() {
       <Header onRegisterClick={() => setPage("register")} onLoginClick={() => setPage("login")} />
       <CategoryMenu />
       <FlashSale />
+      <ProductList />
       <Navbar user={user} onLoginClick={() => setPage("login")} cartCount={cart.length} />
       {page === "home" && (
         <>
