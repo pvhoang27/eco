@@ -1,5 +1,10 @@
+
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import CategoryBar from "./components/CategoryBar";
+import ProductSlider from "./components/ProductSlider";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -28,9 +33,16 @@ function App() {
   return (
     <div className="App" style={{ fontFamily: 'Roboto, Arial, sans-serif', background: '#f5f5f5', minHeight: '100vh' }}>
       <Navbar user={user} onLoginClick={() => setPage("login")} cartCount={cart.length} />
-      {page === "home" && <Home onAddToCart={handleAddToCart} />}
+      {page === "home" && (
+        <>
+          <Banner />
+          <CategoryBar />
+          <ProductSlider onAddToCart={handleAddToCart} />
+        </>
+      )}
       {page === "login" && <Login onLogin={handleLogin} onSwitchToRegister={() => setPage("register")} />}
       {page === "register" && <Register onRegister={handleRegister} onSwitchToLogin={() => setPage("login")} />}
+      <Footer />
     </div>
   );
 }

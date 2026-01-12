@@ -1,0 +1,17 @@
+.flash-sale {
+  background: #fff3e0;
+  padding: 24px 32px;
+  margin-top: 16px;
+  border-radius: 8px;
+}
+.flash-sale h2 {
+  color: #ff5722;
+  margin-bottom: 12px;
+}
+.flash-sale-banner {
+  display: flex;
+  gap: 32px;
+  font-size: 1.1rem;
+  color: #d84315;
+  font-weight: bold;
+}
