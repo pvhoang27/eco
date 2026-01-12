@@ -1,0 +1,12 @@
+{
+  "name": "eco",
+  "version": "1.0.0",
+  "description": "This project is a full-stack e-commerce web application inspired by Shopee.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
