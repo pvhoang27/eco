@@ -94,7 +94,7 @@ function App() {
         style={{
           maxWidth: "900px",
           margin: "2rem auto",
-          background: "#fff",sdfds
+          background: "#fff",
           borderRadius: "8px",
           boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
           padding: "2rem",
