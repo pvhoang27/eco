@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-function Header() {
+function Header({ onRegisterClick, onLoginClick }) {
   return (
     <header className="header">
       <div className="header-top">
@@ -12,8 +12,12 @@ function Header() {
           placeholder="Shopee bao ship 0Đ - Đăng ký ngay!"
         />
         <div className="header-actions">
-          <button className="btn">Đăng Ký</button>
-          <button className="btn">Đăng Nhập</button>
+          <button className="btn" onClick={onRegisterClick}>
+            Đăng Ký
+          </button>
+          <button className="btn" onClick={onLoginClick}>
+            Đăng Nhập
+          </button>
         </div>
       </div>
       <nav className="header-nav">
