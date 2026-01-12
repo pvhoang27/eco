@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="App" style={{ fontFamily: 'Roboto, Arial, sans-serif', background: '#f5f5f5', minHeight: '100vh' }}>
-      <Header />
+      <Header onRegisterClick={() => setPage("register")} onLoginClick={() => setPage("login")} />
       <CategoryMenu />
       <FlashSale />
       <Navbar user={user} onLoginClick={() => setPage("login")} cartCount={cart.length} />
